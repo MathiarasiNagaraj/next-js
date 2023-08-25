@@ -1,0 +1,13 @@
+@mixin flexbox($direction: row, $justify-content: flex-start,$wrap:wrap,$row-gap:auto,$col-gap:auto) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    flex-wrap:$wrap;
+    row-gap:$row-gap;
+    column-gap: $col-gap;
+  }
+
+@mixin flexbox-basis($basis:auto)
+{
+    flex-basis: $basis;
+}

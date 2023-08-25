@@ -1,0 +1,23 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+@import '../../styles/mixins';
+@import '../../styles/general';
+
+
+.blog-card{
+@include flexbox-basis(30%);
+
+h1{
+    font-size: 20px;
+}
+p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to display */
+    -webkit-box-orient: vertical; /* Text flows vertically */
+    overflow: hidden; /* Hide overflow text */
+}
+    .blog-tags{
+     @include flexbox($row-gap:10px,$col-gap:10px);
+
+    }
+}

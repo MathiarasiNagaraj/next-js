@@ -1,0 +1,21 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+@import '../../../styles/mixins';
+@import '../../../styles/general';
+
+.blog-page{
+@include flexbox($direction:column,$justify-content:center,$row-gap:20px);
+width: 80%;
+margin: 0 auto;
+padding: 50px 100px;
+
+.blog-tag{
+    @include flexbox();
+}
+h1{
+    font-size: 43px;
+}
+p{
+    font-size: 30px;
+}
+}

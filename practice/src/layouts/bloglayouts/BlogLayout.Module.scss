@@ -1,0 +1,11 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+@import '../../styles/mixins';
+@import '../../styles/general';
+
+.blog-layouts{
+   @include flexbox($justify-content:center);
+   width: 80%;
+margin: 0 auto;
+
+}
